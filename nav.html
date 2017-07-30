@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nav</title>
+	<style>
+		html,body,ul,li,p{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font-family: sans-serif;
+			font-size: 14px;
+		}
+		a{
+			text-decoration: none;
+			color: #999;
+		}
+		li{
+			list-style: none;
+		}
+		#nav{
+			background:rgba(47,47,47,0.98); 
+			width: 100%;
+    		height: 56px;
+		}
+		.items{	
+			display: flex;
+			margin-left: 50px;
+		}	
+		.items .list .list_link{
+			display: flex;
+			width:100px;
+			height: 56px;
+			line-height: 56px;
+			align-items: center;
+			justify-content: center;
+		}
+		.items_bar{
+			width: 180px;
+		    /*margin-left: -5px;*/
+		    padding: 0 0 10px 0;
+		    background: rgba(47,47,47,0.98);
+		    border-radius: 6px;
+		    border-top-left-radius: 0;
+		    border-top-right-radius: 0;
+		    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+			position: absolute;
+			display: none;
+		}
+		.items_bar a{
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			margin-left: 20px;
+		}
+		.list:hover .show{
+			display: block;
+		}
+		.list:hover .list_link{
+			/*background:#000;*/
+			color: #ddd;
+		}
+		.items_bar li:hover{
+			background: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div id="nav">
+		<div class="nav_left">
+			<ul class="items">
+				<li class="list">
+					<a href="#" class="list_link link_one">Shots</a>
+					<ul class="items_bar show">
+						<li><a href="#">Popular</a></li>
+						<li><a href="#">Recent</a></li>
+						<li><a href="#">Debuts</a></li>
+					</ul>
+				</li>
+				<li class="list">
+					<a href="#" class="list_link wider">Designers</a>
+					<ul class="items_bar show">
+						<li><a href="#">Find Designers</a></li>
+						<li><a href="#">Design Teams</a></li>
+					</ul>
+				</li>
+				<li class="list">
+					<a href="#" class="list_link">Blog</a>
+					<ul class="items_bar show">
+						<li><a href="#">Lastest Stories</a></li>
+						<li><a href="#">Dribbble Meetup</a></li>
+						<li><a href="#">Host a Meetup</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="nav_right">
+			
+		</div>
+	</div>
+</body>
+</html>
